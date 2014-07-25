@@ -5,7 +5,7 @@ class DAO_ActiveRecord{
 		require_once 'lib/ActiveRecord.php';
 		
 		$status = 'production';
-		$connections = array('production'=>'mysql://test:E6D0AD7CAA8R@sjkap356/test',
+		$connections = array('production'=>'mysql://test:E6D0AD7CAA8R@server356/test',
 							 'development'=>'mysql://root:12345@localhost/test');
 		
 		$cfg = ActiveRecord\Config::instance();
