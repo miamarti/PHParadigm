@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<script src="assets/js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="assets/js/console.js"></script>
+<link href="assets/css/console.css" rel="stylesheet">
+</head>
+<body>
+	<div id="consoleArea" class="consoleArea"></div>
+	
+	<script type="text/javascript">
+		var controller = '../PHP_Resources/src/controller/index.php/';
+			
+		$.ajax({
+				url : controller + 'CustomersClass/getJson',
+				dataType : "json",
+				type : "POST",
+				success : function(data) {
+					console.log(data);
+				}
+			});
+	</script>
+</body>
+</html>
